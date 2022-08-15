@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewReading"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundtrans">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/readinglogo"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Reading"
+            android:textSize="25dp"
+            android:textColor="#0063B1"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtReadingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Date (YY-MM-DD-HH)"
+            android:background="@drawable/divider"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtReadingPressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Blood pressure (120/80)"
+            android:background="@drawable/divider"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtReadingSugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Sugar level (100)"
+            android:background="@drawable/divider"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtReadingWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Weight Kg"
+            android:background="@drawable/divider"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="3">
+            <Button
+                android:id="@+id/btnReadingSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/btnReadingAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/btnReadingUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/btnReadingDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/btnReadingClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

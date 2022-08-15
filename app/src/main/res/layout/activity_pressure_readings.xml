@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfo"
+    android:background="@drawable/backgroundtrans">
+
+    <LinearLayout
+        android:id="@+id/headerPressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/prussure"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Past Pressure Readings"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <Button
+                android:id="@+id/pressureBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Back"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/pressureRead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="READ"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+        <ScrollView
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerPressure">
+         <TextView
+             android:id="@+id/txtPressureReadings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+             android:textSize="20dp"
+             android:textStyle="bold"
+            android:text="No Readings"
+            />
+        </ScrollView>
+
+</RelativeLayout>

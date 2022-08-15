@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/backgroundtrans">
+    <TextView
+        android:id="@+id/aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="#B71C1C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/aboutUs2"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/aboutUs"
+        android:layout_height="match_parent"
+        android:text="This project is done for the Mobile Application Development Course supervised by Dr. AbedalRahman Al-Khateeb"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/michael"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Michael Jaser"
+        app:layout_constraintTop_toBottomOf="@id/aboutUs2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#3F51B5"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/ali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:text="Alaa Ali"
+        android:textColor="#3F51B5"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aboutUs2" />
+
+    <TextView
+        android:id="@+id/detailsMichael"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="20190229\nKHSCS\nPSUT"
+        app:layout_constraintTop_toBottomOf="@id/michael"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/detailsAli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="25dp"
+        android:text="20170611\nKHSCS\nPSUT"
+        android:textColor="#3F51B5"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ali" />
+
+    <Button
+        android:id="@+id/btnDialogOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailsMichael" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
